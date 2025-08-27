@@ -1,5 +1,72 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-
 body{
-    background: white;
+    background: rgb(60, 163, 1);
+    font-size: 20px;
+    font-weight: 400;
+}
+.secondP {
+    margin-top: 50px;
+    font-size: 30px;
+}
+input {
+  border-radius: 10px;
+}
+button {
+  border-radius: 10px;
+}
+#randomCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  
+}
+.card {
+  width: 80px;
+  height: 120px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin-right:10px
+}
+.card .top,
+.card .bottom {
+  position: absolute;
+  font-size: 20px;
+  padding: 5px;
+}
+.card .top {
+  top: 0;
+  left: 0;
+}
+.card .bottom {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+.card .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.card.red {
+    color: red;
+}
+.sort-step {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgb(60, 163, 1)
+}
+.card-row {
+  display: flex;
+  justify-content: space-around;
 }
